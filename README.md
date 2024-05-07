@@ -1,11 +1,14 @@
-# ex.1-cd
-CONVERSION OF NON-DETERMINISTIC FINITE AUTOMATON (NFA) TO DETERMINISTIC FINITE AUTOMATON (DFA)
+### ex.1-cd
+
+### CONVERSION OF NON-DETERMINISTIC FINITE AUTOMATON (NFA) TO DETERMINISTIC FINITE AUTOMATON (DFA)
 Register Number :212221040067
 Date : 07/05/2024
-AIM
+
+## AIM
+
 To write a C program for Conversion of Non-Deterministic Finite Automaton (NFA) To Deterministic Finite Automaton (DFA).
 
-ALGORITHM
+## ALGORITHM
 Step 1 : Take ∈ closure for the beginning state of NFA as beginning state of DFA.
 
 Step 2 : Find the states that can be traversed from the present for each input symbol (union of transition value and their closures for each states of NFA present in current state of DFA).
@@ -16,7 +19,9 @@ Step 4 : Do repeat Step 2 and Step 3 until no new state present in DFA transitio
 
 Step 5 : Mark the states of DFA which contains final state of NFA as final states of DFA.
 
-PROGRAM
+
+## PROGRAM
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -333,8 +338,11 @@ int main() {
  
   return 0;
 }
+```
 OUTPUT
-Screenshot 2024-05-01 215239 Screenshot 2024-05-01 215258
+
+![image](https://github.com/teja2004039/ex.1-cd/assets/151063592/7a3c01e0-9014-44cc-a095-9dd997134aac)
+
 
 RESULT
 Program to convert NFA to DFA has been implemented.
